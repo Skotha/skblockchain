@@ -1,0 +1,140 @@
+{
+	"compiler": {
+		"version": "0.4.24+commit.e67f0147"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "salesManager",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newTreasurer",
+						"type": "address"
+					}
+				],
+				"name": "transferTreasurership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newSalesManager",
+						"type": "address"
+					}
+				],
+				"name": "transferSalesManager",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "treasurer",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousTreasurer",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "newTreasurer",
+						"type": "address"
+					}
+				],
+				"name": "TreasurershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousSalesManager",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "newSalesManager",
+						"type": "address"
+					}
+				],
+				"name": "SalesManagerTransferred",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"transferSalesManager(address)": {
+					"details": "Allows the current SalesManager to transfer control of the contract to a newSalesManager.",
+					"params": {
+						"newSalesManager": "The address to transfer SalesManager to."
+					}
+				},
+				"transferTreasurership(address)": {
+					"details": "Allows the current treasurer to transfer control of the contract to a newTreasurer.",
+					"params": {
+						"newTreasurer": "The address to transfer treasurership to."
+					}
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Raj3Coin.sol": "Ownable"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Raj3Coin.sol": {
+			"keccak256": "0x2c4b01942e7b7f6dcdf54dce0cad46e56d0d047c8bff78572e2c13a3799f7398",
+			"urls": [
+				"bzzr://340191c329e9b6a8eb3be25ae407833cbad950063e7ae1fcf7e68fbf2dc33468"
+			]
+		}
+	},
+	"version": 1
+}
